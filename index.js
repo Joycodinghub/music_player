@@ -84,6 +84,17 @@ function updateProgressBar1(){
    
 
     progressBar.style.width = percentage+"%";
+
+    if(percentage==100){
+        i++;
+        if(i<musicArray.length){
+        musicPlay(0);
+        }
+        else{
+            i=0;
+            musicPlay(0);
+        }
+    }
 }
 
 function startDrag(){
